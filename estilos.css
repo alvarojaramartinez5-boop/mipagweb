@@ -141,7 +141,7 @@ footer p {
     nav {
         flex-direction: column;
         align-items: center;
-        gap: 12px;
+        gap: 13px;
     }
 
     .intereses {
