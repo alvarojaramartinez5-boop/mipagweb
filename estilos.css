@@ -1,77 +1,60 @@
-/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: sans-serif;
 }
 
 body {
-    background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    color: #f0f9ff;
+    background-color: #1a1a2e;
+    padding: 30px;
+    color: #f0f0f0;
 }
 
-/* Tarjeta principal */
-.tarjeta {
-    background: rgba(255, 255, 255, 0.06);
-    border-radius: 20px;
-    padding: 40px 30px;
+.caja {
+    background-color: #16213e;
     max-width: 600px;
-    width: 100%;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    margin: 0 auto;
+    padding: 35px 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
-/* Títulos y textos */
 h1 {
-    font-size: 2rem;
-    color: #38bdf8;
-    margin-bottom: 10px;
+    color: #4fc3f7;
     text-align: center;
+    margin-bottom: 8px;
 }
 
-.subtitulo {
+.edad {
+    color: #b0bec5;
     text-align: center;
-    color: #94a3b8;
-    font-size: 1.1rem;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+    font-size: 17px;
 }
 
-.contenido p {
-    margin-bottom: 18px;
-    line-height: 1.8;
-    font-size: 1.05rem;
+.texto p {
+    margin-bottom: 16px;
+    line-height: 1.6;
+    font-size: 16px;
 }
 
-.resaltado {
-    color: #facc15;
-    font-weight: 600;
-}
-
-/* Sección de intereses */
-.seccion {
-    background: rgba(56, 189, 248, 0.08);
-    border-left: 4px solid #38bdf8;
-    padding: 15px 20px;
-    border-radius: 0 12px 12px 0;
+.intereses {
+    background-color: #0f3460;
+    border-left: 4px solid #4fc3f7;
+    padding: 15px 18px;
     margin: 20px 0;
+    border-radius: 0 10px 10px 0;
 }
 
-.seccion h3 {
-    color: #67e8f9;
+.intereses h3 {
+    color: #81d4fa;
     margin-bottom: 10px;
 }
 
-/* Pie de página */
-.pie {
-    margin-top: 30px;
+.final {
+    margin-top: 25px;
     text-align: center;
-    font-size: 0.95rem;
-    color: #94a3b8;
+    color: #90a4ae;
+    font-size: 15px;
 }
