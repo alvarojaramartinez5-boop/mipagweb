@@ -5,92 +5,82 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #0b1020;
-    color: #ffffff;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f8;
+    color: #222;
 }
 
-/* ENCABEZADO */
 
 header {
-    background: linear-gradient(135deg, #111c44, #0066ff);
+    background: linear-gradient(120deg, #6a11cb, #2575fc);
+    color: white;
     text-align: center;
-    padding: 80px 20px;
+    padding: 70px 20px;
 }
 
 header h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
+    font-size: 45px;
+    margin-bottom: 15px;
 }
 
 header p {
-    font-size: 20px;
-    color: #dbe7ff;
+    font-size: 19px;
 }
 
 /* MENU */
 
 nav {
-    background: #080d1a;
+    background-color: white;
     display: flex;
     justify-content: center;
-    gap: 35px;
-    padding: 18px;
-    position: sticky;
-    top: 0;
-    z-index: 10;
+    gap: 40px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 nav a {
-    color: white;
+    color: #333;
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s;
 }
 
 nav a:hover {
-    color: #00aaff;
+    color: #6a11cb;
 }
 
-/* CONTENIDO */
-
 main {
-    width: 90%;
+    width: 85%;
     max-width: 1000px;
-    margin: 40px auto;
+    margin: 50px auto;
 }
 
 .tarjeta {
-    background: #121a2d;
-    margin-bottom: 30px;
+    background-color: white;
     padding: 35px;
-    border-radius: 15px;
-    border: 1px solid #263653;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    border-left: 6px solid #6a11cb;
 }
 
 .tarjeta h2 {
-    color: #00aaff;
-    margin-bottom: 20px;
+    color: #6a11cb;
     font-size: 30px;
+    margin-bottom: 20px;
 }
 
 .tarjeta p {
+    font-size: 17px;
+    line-height: 1.7;
     margin-bottom: 15px;
-    color: #d5dbea;
+    color: #555;
 }
 
 strong {
-    color: #ffffff;
+    color: #2575fc;
 }
-
-/* INTERESES */
 
 .intereses {
     display: flex;
@@ -100,55 +90,51 @@ strong {
 
 .intereses div {
     flex: 1;
-    background: #18243c;
+    background: #f5f7ff;
     padding: 25px;
-    border-radius: 12px;
+    border-radius: 15px;
     text-align: center;
+    border: 2px solid #e4e7ff;
     transition: 0.3s;
 }
 
 .intereses div:hover {
-    transform: translateY(-8px);
-    background: #1d3154;
+    transform: scale(1.05);
+    border-color: #6a11cb;
 }
 
 .intereses h3 {
-    color: #00aaff;
+    color: #2575fc;
     margin-bottom: 10px;
 }
-
-/* PIE DE PAGINA */
-
 footer {
-    background: #080d1a;
+    background-color: #222;
+    color: white;
     text-align: center;
     padding: 30px;
     margin-top: 50px;
 }
 
 footer p {
-    color: #8f9bb3;
+    color: #ddd;
 }
-
-/* CELULAR */
-
 @media (max-width: 700px) {
 
     header h1 {
-        font-size: 35px;
+        font-size: 32px;
     }
 
     nav {
         flex-direction: column;
         align-items: center;
-        gap: 13px;
+        gap: 15px;
     }
 
     .intereses {
         flex-direction: column;
     }
 
-    .tarjeta {
-        padding: 25px;
+    main {
+        width: 92%;
     }
 }
